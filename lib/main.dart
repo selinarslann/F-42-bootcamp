@@ -15,3 +15,10 @@ class MainApp extends StatelessWidget {
         debugShowCheckedModeBanner: false, home: SplashPageOne());
   }
 }
+
+// TODO: Components klasörü oluşturulacak.
+// TODO: Bütün kullanınal tasarımlar hazırlanacak.
+
+// ! Splash Pageler için olan TODO!
+//TODO: Geç butonuna basıldığında 3. sayfaya atıyor fakat geri geldiğince tekrar 1. sayfaya atıyor. 2. sayfaya atması lazım.
+//TODO: bütün mWidth ve mHeight değerleri kontrol edilecek.
