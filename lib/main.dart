@@ -7,11 +7,13 @@ void main() {
 }
 
 class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+  const MainApp({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        debugShowCheckedModeBanner: false, home: SplashPageOne());
+      debugShowCheckedModeBanner: false,
+      home: SplashPageOne(), // Use SplashPageOne from renan branch
+    );
   }
 }
