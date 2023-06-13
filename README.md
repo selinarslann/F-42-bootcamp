@@ -22,13 +22,13 @@ ThinkTank, öğrencilerin çalışırken yalnız başlarına olduklarında yaşa
 
 ## Ürün Özellikleri
 
--Arkadaş Ekleme: ThinkTank, öğrencilerin uygulama içinde arkadaşlarını eklemelerine olanak tanır. Kullanıcılar, arkadaşlarını bulabilir, ekleyebilir ve birbirlerinin çalışma sürelerini takip edebilirler.
+- Arkadaş Ekleme: ThinkTank, öğrencilerin uygulama içinde arkadaşlarını eklemelerine olanak tanır. Kullanıcılar, arkadaşlarını bulabilir, ekleyebilir ve birbirlerinin çalışma sürelerini takip edebilirler.
 
--Kronometre: Uygulama, kullanıcılara çalışma sürelerini ölçmek için bir kronometre sağlar. Öğrenciler, çalışma sürelerini başlatabilir, duraklatabilir ve sonlandırabilirler. Bu sayede, verimli çalışma alışkanlıklarını izlemek ve geliştirmek için bir araç sunar.
+- Kronometre: Uygulama, kullanıcılara çalışma sürelerini ölçmek için bir kronometre sağlar. Öğrenciler, çalışma sürelerini başlatabilir, duraklatabilir ve sonlandırabilirler. Bu sayede, verimli çalışma alışkanlıklarını izlemek ve geliştirmek için bir araç sunar.
 
--Sıralama: ThinkTank, kullanıcıların çalışma sürelerine dayalı olarak genel bir sıralamaya girmelerini sağlar. Kullanıcılar, kendi çalışma sürelerini ve ekledikleri arkadaşlarının çalışma sürelerini görerek motivasyonlarını artırabilir ve rekabetçi bir ortamda kendilerini geliştirebilirler.
+- Sıralama: ThinkTank, kullanıcıların çalışma sürelerine dayalı olarak genel bir sıralamaya girmelerini sağlar. Kullanıcılar, kendi çalışma sürelerini ve ekledikleri arkadaşlarının çalışma sürelerini görerek motivasyonlarını artırabilir ve rekabetçi bir ortamda kendilerini geliştirebilirler.
 
--Forumlar, öğrencilerin sorularını sormak, tartışmalara katılmak ve bilgi paylaşımında bulunmak için bir platform sağlar. Kullanıcılar, farklı konularla ilgili sorularını diğer öğrencilere yöneltebilir ve deneyimlerini paylaşabilir. Bu şekilde, öğrencilerin birbirleriyle etkileşim kurmaları ve farklı bakış açılarını keşfetmeleri teşvik edilir.
+- Forumlar, öğrencilerin sorularını sormak, tartışmalara katılmak ve bilgi paylaşımında bulunmak için bir platform sağlar. Kullanıcılar, farklı konularla ilgili sorularını diğer öğrencilere yöneltebilir ve deneyimlerini paylaşabilir. Bu şekilde, öğrencilerin birbirleriyle etkileşim kurmaları ve farklı bakış açılarını keşfetmeleri teşvik edilir.
 
 -Grup İletişimi: ThinkTank, kullanıcıların oluşturdukları grup arkadaşlarıyla iletişim kurmalarını sağlar. Grup üyeleri, çalışma hedefleri, stratejiler ve motivasyon konularında konuşabilir ve birbirlerine destek olabilirler.
 
