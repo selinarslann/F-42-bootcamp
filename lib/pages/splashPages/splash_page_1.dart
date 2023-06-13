@@ -11,7 +11,7 @@ class SplashPageOne extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'ThinkTank',
+          'ThinkTanks',
           style: GoogleFonts.inter(
             fontWeight: FontWeight.bold,
             fontSize: mHeight * 0.044,
