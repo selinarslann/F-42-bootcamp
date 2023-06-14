@@ -19,18 +19,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: context.watch<ThemeChange>().getTheme ?? lightTheme,
         darkTheme: context.watch<ThemeChange>().getTheme ?? darkTheme,
         home: const SplashPageOne());
-
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: LoginPage(), // Use SplashPageOne from renan branch
-    );
-
   }
 }
 
