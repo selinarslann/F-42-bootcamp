@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
                       icon: const Icon(Icons.dark_mode),
                     ),
               MainElevatedButton(
-                text: 'deneme2',
+                text: 'allah için düzelsin',
                 onPressed: () {},
               )
             ],
