@@ -1,5 +1,6 @@
 import 'package:auth_buttons/auth_buttons.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatelessWidget {
@@ -35,6 +36,7 @@ class LoginPage extends StatelessWidget {
               ),
               const SizedBox(height: 20.0),
               TextFormField(
+                keyboardType: TextInputType.visiblePassword,
                 obscureText: true,
                 decoration: const InputDecoration(
                   labelText: 'Şifre',
@@ -46,6 +48,7 @@ class LoginPage extends StatelessWidget {
                   TextButton(
                     child: const Text(
                       'Sifreninizi mi unuttunuz?',
+                      style: TextStyle(color: Colors.black),
                     ),
                     onPressed: () {},
                   ),
@@ -56,7 +59,8 @@ class LoginPage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
-                      side: const BorderSide(color: Color(0xffEB5757))),
+                      side: const BorderSide(
+                          color: Color(0xffEB5757), width: 0.4)),
                   elevation: 0,
                   shadowColor: Colors.transparent,
                   minimumSize: Size(mWidth, mHeight * 0.06),
@@ -69,7 +73,6 @@ class LoginPage extends StatelessWidget {
                 child: const Text('Giriş',
                     style: TextStyle(
                       fontSize: 20,
-                      fontWeight: FontWeight.bold,
                       color: Color(0xffEB5757),
                     )),
               ),
@@ -79,10 +82,57 @@ class LoginPage extends StatelessWidget {
                   'Ya da ?',
                 ),
               ),
-
-              // Google ile giriş düğmesi
-              GoogleAuthButton(onPressed: () {}),
-              AppleAuthButton(onPressed: () {}),
+              ElevatedButton.icon(
+                onPressed: () {
+                  // Butona tıklandığında yapılacak işlemler
+                },
+                style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        side: const BorderSide(color: Colors.grey)),
+                    elevation: 0,
+                    shadowColor: Colors.transparent,
+                    minimumSize: Size(mWidth, mHeight * 0.06),
+                    //backgroundColor: const Color(0xffE0E0DE),
+                    backgroundColor: Colors.white),
+                icon: const Icon(
+                  FontAwesomeIcons.google,
+                  color: Colors.black,
+                ), // İkonu burada belirtin
+                label: const Text(
+                  'Google ile Giriş Yap',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+              ElevatedButton.icon(
+                onPressed: () {
+                  // Butona tıklandığında yapılacak işlemler
+                },
+                style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        side: const BorderSide(color: Colors.grey)),
+                    elevation: 0,
+                    shadowColor: Colors.transparent,
+                    minimumSize: Size(mWidth, mHeight * 0.06),
+                    //backgroundColor: const Color(0xffE0E0DE),
+                    backgroundColor: Colors.white),
+                icon: const Icon(
+                  FontAwesomeIcons.apple,
+                  color: Colors.black,
+                ), // İkonu burada belirtin
+                label: const Text(
+                  'Google ile Giriş Yap',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  'Bir hesabin yok mu ? ',
+                  style: TextStyle(color: Colors.black),
+                ),
+              )
             ],
           ),
         ),
