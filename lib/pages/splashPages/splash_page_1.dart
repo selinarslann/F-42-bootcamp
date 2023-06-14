@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:thinktank/pages/components/main_elevatedbutton.dart';
+import 'package:thinktank/pages/components/main_outlinedbutton.dart';
 import 'package:thinktank/pages/home_page.dart';
 import 'package:thinktank/pages/splashPages/splash_page_2.dart';
 import 'package:thinktank/pages/splashPages/splash_page_3.dart';
@@ -59,7 +59,7 @@ class SplashPageOne extends StatelessWidget {
               // ! Hemen aşağıdaki 38 ve 10 değerleride mWidth ve mHeight tarzında yapılacak.
               padding:
                   const EdgeInsets.only(top: 8, bottom: 3, left: 38, right: 38),
-              child: MainElevatedButton(
+              child: MainOutlinedButton(
                 text: 'Devam et',
                 onPressed: () {
                   Navigator.push(
@@ -69,6 +69,7 @@ class SplashPageOne extends StatelessWidget {
                     ),
                   );
                 },
+                textSize: 0.023,
               ),
             ),
             TextButton(
