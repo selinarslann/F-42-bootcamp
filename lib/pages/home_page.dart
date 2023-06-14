@@ -12,7 +12,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return SafeArea(
       child: Scaffold(
         body: Center(
@@ -41,12 +40,6 @@ class HomePage extends StatelessWidget {
               )
             ],
           ),
-
-    return const SafeArea(
-      child: Scaffold(
-        body: Center(
-          child: Text('Think Tank'), // Keep the changes from renan branch
-
         ),
       ),
     );
