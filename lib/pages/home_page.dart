@@ -8,7 +8,7 @@ import '../theme/dark_theme.dart';
 import '../theme/theme_service.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key});
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
                       icon: const Icon(Icons.dark_mode),
                     ),
               MainElevatedButton(
-                text: 'deneme',
+                text: 'deneme2',
                 onPressed: () {},
               )
             ],

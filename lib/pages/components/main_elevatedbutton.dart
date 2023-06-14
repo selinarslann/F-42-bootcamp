@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../splashPages/splash_page_2.dart';
-
 class MainElevatedButton extends StatelessWidget {
   const MainElevatedButton({super.key, this.onPressed, required this.text});
 
@@ -15,7 +13,7 @@ class MainElevatedButton extends StatelessWidget {
     double mHeight = MediaQuery.of(context).size.height;
     double mWidth = MediaQuery.of(context).size.width;
 
-    return ElevatedButton(
+    return OutlinedButton(
       onPressed: onPressed,
       style: ButtonStyle(
         backgroundColor:
@@ -25,14 +23,13 @@ class MainElevatedButton extends StatelessWidget {
           Size(mWidth * 0.81, mHeight * 0.075),
         ),
         elevation: MaterialStateProperty.all<double>(0.0),
-        shadowColor: MaterialStateProperty.all<Color>(Colors.transparent),
         shape: MaterialStateProperty.all<OutlinedBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
             side: const BorderSide(
-              //! bu renk bpzuk
-              color: Color.fromARGB(255, 145, 145, 144),
-            ),
+                //! bu renk bozuk
+                color: Color.fromARGB(255, 205, 47, 47),
+                width: 0.4),
           ),
         ),
       ),
