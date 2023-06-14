@@ -1,4 +1,3 @@
-import 'package:auth_buttons/auth_buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -55,26 +54,29 @@ class LoginPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 20.0),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      side: const BorderSide(
-                          color: Color(0xffEB5757), width: 0.4)),
-                  elevation: 0,
-                  shadowColor: Colors.transparent,
-                  minimumSize: Size(mWidth, mHeight * 0.06),
-                  backgroundColor: const Color(0xffFEF5F2),
-                  foregroundColor: const Color(0xffEB5757),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        side: const BorderSide(
+                            color: Color(0xffEB5757), width: 0.4)),
+                    elevation: 0,
+                    shadowColor: Colors.transparent,
+                    minimumSize: Size(mWidth, mHeight * 0.06),
+                    backgroundColor: const Color(0xffFEF5F2),
+                    foregroundColor: const Color(0xffEB5757),
+                  ),
+                  onPressed: () {
+                    // Giriş düğmesine basıldığında yapılacak işlemler
+                  },
+                  child: const Text('Giriş',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Color(0xffEB5757),
+                      )),
                 ),
-                onPressed: () {
-                  // Giriş düğmesine basıldığında yapılacak işlemler
-                },
-                child: const Text('Giriş',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Color(0xffEB5757),
-                    )),
               ),
               const Padding(
                 padding: EdgeInsets.all(20.0),
@@ -82,48 +84,54 @@ class LoginPage extends StatelessWidget {
                   'Ya da ?',
                 ),
               ),
-              ElevatedButton.icon(
-                onPressed: () {
-                  // Butona tıklandığında yapılacak işlemler
-                },
-                style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        side: const BorderSide(color: Colors.grey)),
-                    elevation: 0,
-                    shadowColor: Colors.transparent,
-                    minimumSize: Size(mWidth, mHeight * 0.06),
-                    //backgroundColor: const Color(0xffE0E0DE),
-                    backgroundColor: Colors.white),
-                icon: const Icon(
-                  FontAwesomeIcons.google,
-                  color: Colors.black,
-                ), // İkonu burada belirtin
-                label: const Text(
-                  'Google ile Giriş Yap',
-                  style: TextStyle(color: Colors.black),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ElevatedButton.icon(
+                  onPressed: () {
+                    // Butona tıklandığında yapılacak işlemler
+                  },
+                  style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: const BorderSide(color: Colors.grey)),
+                      elevation: 0,
+                      shadowColor: Colors.transparent,
+                      minimumSize: Size(mWidth, mHeight * 0.06),
+                      //backgroundColor: const Color(0xffE0E0DE),
+                      backgroundColor: Colors.white),
+                  icon: const Icon(
+                    FontAwesomeIcons.google,
+                    color: Colors.black,
+                  ), // İkonu burada belirtin
+                  label: const Text(
+                    'Google ile Giriş Yap',
+                    style: TextStyle(color: Colors.black),
+                  ),
                 ),
               ),
-              ElevatedButton.icon(
-                onPressed: () {
-                  // Butona tıklandığında yapılacak işlemler
-                },
-                style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        side: const BorderSide(color: Colors.grey)),
-                    elevation: 0,
-                    shadowColor: Colors.transparent,
-                    minimumSize: Size(mWidth, mHeight * 0.06),
-                    //backgroundColor: const Color(0xffE0E0DE),
-                    backgroundColor: Colors.white),
-                icon: const Icon(
-                  FontAwesomeIcons.apple,
-                  color: Colors.black,
-                ), // İkonu burada belirtin
-                label: const Text(
-                  'Google ile Giriş Yap',
-                  style: TextStyle(color: Colors.black),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ElevatedButton.icon(
+                  onPressed: () {
+                    // Butona tıklandığında yapılacak işlemler
+                  },
+                  style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: const BorderSide(color: Colors.grey)),
+                      elevation: 0,
+                      shadowColor: Colors.transparent,
+                      minimumSize: Size(mWidth, mHeight * 0.06),
+                      //backgroundColor: const Color(0xffE0E0DE),
+                      backgroundColor: Colors.white),
+                  icon: const Icon(
+                    FontAwesomeIcons.apple,
+                    color: Colors.black,
+                  ), // İkonu burada belirtin
+                  label: const Text(
+                    'Google ile Giriş Yap',
+                    style: TextStyle(color: Colors.black),
+                  ),
                 ),
               ),
               TextButton(
