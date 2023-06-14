@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:thinktank/pages/components/main_elevatedbutton.dart';
 import 'package:thinktank/pages/home_page.dart';
 import 'package:thinktank/pages/splashPages/splash_page_2.dart';
 import 'package:thinktank/pages/splashPages/splash_page_3.dart';
@@ -58,41 +59,16 @@ class SplashPageOne extends StatelessWidget {
               // ! Hemen aşağıdaki 38 ve 10 değerleride mWidth ve mHeight tarzında yapılacak.
               padding:
                   const EdgeInsets.only(top: 8, bottom: 3, left: 38, right: 38),
-              child: ElevatedButton(
+              child: MainElevatedButton(
+                text: 'Devam et',
                 onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const SplashPageTwo()),
+                      builder: (context) => const SplashPageTwo(),
+                    ),
                   );
                 },
-                style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(const Color(0xffF7F7F5)),
-                  overlayColor:
-                      MaterialStateProperty.all<Color>(const Color(0xffC1D8C1)),
-                  fixedSize: MaterialStateProperty.all<Size>(
-                    Size(mWidth * 0.81, mHeight * 0.075),
-                  ),
-                  elevation: MaterialStateProperty.all<double>(0.0),
-                  shadowColor:
-                      MaterialStateProperty.all<Color>(Colors.transparent),
-                  shape: MaterialStateProperty.all<OutlinedBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                      side: const BorderSide(
-                        color: Color(0xFFE0E0DE),
-                      ),
-                    ),
-                  ),
-                ),
-                child: Text(
-                  'Devam et',
-                  style: GoogleFonts.inter(
-                    color: const Color(0xff37352F),
-                    fontSize: mHeight * 0.023,
-                  ),
-                ),
               ),
             ),
             TextButton(
