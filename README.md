@@ -14,26 +14,32 @@ Takım Flutter 42
 
 ## Ürün İsmi
 
---Movie App--
+--ThinkTank--
 
 ## Ürün Açıklaması
 
-- Movie App uygulamamız ile insanların izlemek istediği filmlere ve dizilere daha kolay karar vermesini sağlayacağız. İçerisinde binlerce filmi barındıran uygulamamız aynı zamanda Netflix, Prime vb. platformlarda yayınlanıp yayınlanmadığını ve IMDB puanlarını da gösterecek.
+ThinkTank, öğrencilerin çalışırken yalnız başlarına olduklarında yaşadıkları motivasyon kaybını gidermeyi hedefleyen bir mobil uygulamadır. Çoğu zaman, bireyler çalışırken yanlarında arkadaşları veya çalışma ortakları olmadığında motivasyon eksikliği yaşayabilirler. İşte bu noktada ThinkTank devreye girer. Uygulama, öğrencilere arkadaşlarıyla bağlantı kurma ve etkileşime geçme imkanı sunar. Kullanıcılar, uygulama üzerinden arkadaşlarını ekleyebilir ve birbirleriyle çalışma sürelerini paylaşabilirler. Bu sayede, yalnız çalışırken bile arkadaşlarıyla rekabet edebilir, motivasyonlarını yüksek tutabilir ve daha verimli bir şekilde çalışabilirler. ThinkTank'in kronometre özelliği, öğrencilerin çalışma sürelerini kaydetmelerine ve takip etmelerine yardımcı olur. Bireyler, başladıkları anda kronometreyi başlatarak çalışma sürelerini ölçebilir ve uygulama üzerinden bunları kaydedebilirler. Bu, kullanıcılara gerçek zamanlı bir geri bildirim sağlar ve çalışma sürelerini izlemelerini sağlar. Ayrıca, sıralama özelliği sayesinde kullanıcılar, arkadaşlarıyla kıyaslanarak kendilerini motive edebilirler. ThinkTank ayrıca, forumlar üzerinden sorular sorma ve grup iletişimi kurma imkanı sunar. Öğrenciler, uygulama içinde farklı konularla ilgili sorularını diğer kullanıcılara yöneltebilir ve deneyimlerini paylaşabilirler. Bu şekilde, çalışırken yalnız hissetmeyen öğrenciler, diğer kullanıcılarla etkileşime geçerek motivasyonlarını ve öğrenme deneyimlerini artırabilirler. Arkadaşlarıyla rekabet etmek, sorular sormak ve grup iletişimi kurmak sayesinde öğrenciler, çalışmalarında daha motive olabilir, kendilerini desteklenmiş hissedebilir ve hedeflerine daha hızlı ulaşabilirler.
 
 ## Ürün Özellikleri
 
-- Filmleri türüne göre ayırma
-- Filmlerin yönetmen, aktör, aktris vb. bilgilerini posteriyle birlikte gösterme
-- IMDB ve Rotten Tomatoes puanlarını gösterme
-- Netflix'te ve Prime'da bulunurluğunu gösterme
+- Arkadaş Ekleme: ThinkTank, öğrencilerin uygulama içinde arkadaşlarını eklemelerine olanak tanır. Kullanıcılar, arkadaşlarını bulabilir, ekleyebilir ve birbirlerinin çalışma sürelerini takip edebilirler.
+
+- Kronometre: Uygulama, kullanıcılara çalışma sürelerini ölçmek için bir kronometre sağlar. Öğrenciler, çalışma sürelerini başlatabilir, duraklatabilir ve sonlandırabilirler. Bu sayede, verimli çalışma alışkanlıklarını izlemek ve geliştirmek için bir araç sunar.
+
+- Sıralama: ThinkTank, kullanıcıların çalışma sürelerine dayalı olarak genel bir sıralamaya girmelerini sağlar. Kullanıcılar, kendi çalışma sürelerini ve ekledikleri arkadaşlarının çalışma sürelerini görerek motivasyonlarını artırabilir ve rekabetçi bir ortamda kendilerini geliştirebilirler.
+
+- Forumlar: Öğrencilerin sorularını sormak, tartışmalara katılmak ve bilgi paylaşımında bulunmak için bir platform sağlar. Kullanıcılar, farklı konularla ilgili sorularını diğer öğrencilere yöneltebilir ve deneyimlerini paylaşabilir. Bu şekilde, öğrencilerin birbirleriyle etkileşim kurmaları ve farklı bakış açılarını keşfetmeleri teşvik edilir.
+
+-Grup İletişimi: ThinkTank, kullanıcıların oluşturdukları grup arkadaşlarıyla iletişim kurmalarını sağlar. Grup üyeleri, çalışma hedefleri, stratejiler ve motivasyon konularında konuşabilir ve birbirlerine destek olabilirler.
 
 ## Hedef Kitle
 
-- Netflix kullanıcıları
-- Prime kullanıcıları
-- Sinema severler
-- Dizi severler
-- 15 - 65 yaş arası kullanıcılar
+- Üniversite öğrencileri
+- Lise öğrencileri
+- Öğrenim ve çalışma odaklı bireyler
+- Eğitimciler ve mentorlar
+
+
 
 ## Product Backlog URL
 
