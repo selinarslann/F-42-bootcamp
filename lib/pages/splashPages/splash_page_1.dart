@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:thinktank/pages/home_page.dart';
 import 'package:thinktank/pages/splashPages/splash_page_2.dart';
 import 'package:thinktank/pages/splashPages/splash_page_3.dart';
 
@@ -27,8 +28,11 @@ class SplashPageOne extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Image.asset('assets/images/image_1.png',
-                height: mHeight * 0.4, width: mWidth * 0.9),
+            Theme.of(context).brightness == Brightness.dark
+                ? Image.asset('assets/images/mangreen.jpg',
+                    height: mHeight * 0.4, width: mWidth * 0.9)
+                : Image.asset('assets/images/image_1.png',
+                    height: mHeight * 0.4, width: mWidth * 0.9),
             Text(
               'Öğrenmeye birlikte adım atın!',
               textAlign: TextAlign.center,
@@ -96,7 +100,8 @@ class SplashPageOne extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const SplashPageTree()),
+                      // ! SplashPageTree OLACAK!
+                      builder: (context) => const HomePage()),
                 );
               },
               child: Text(
