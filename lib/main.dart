@@ -13,15 +13,22 @@ void main() {
 }
 
 class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+  const MainApp({Key? key});
 
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: context.watch<ThemeChange>().getTheme ?? lightTheme,
         darkTheme: context.watch<ThemeChange>().getTheme ?? darkTheme,
         home: const SplashPageOne());
+
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashPageOne(), // Use SplashPageOne from renan branch
+    );
+
   }
 }
 
