@@ -8,11 +8,10 @@ import '../theme/dark_theme.dart';
 import '../theme/theme_service.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key});
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-
     return SafeArea(
       child: Scaffold(
         body: Center(
@@ -41,12 +40,6 @@ class HomePage extends StatelessWidget {
               )
             ],
           ),
-
-    return const SafeArea(
-      child: Scaffold(
-        body: Center(
-          child: Text('Think Tank'), // Keep the changes from renan branch
-
         ),
       ),
     );
