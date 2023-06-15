@@ -57,9 +57,12 @@ class SplashPageTree extends StatelessWidget {
               ),
             ),
             Padding(
-              // ! Hemen aşağıdaki 38 ve 10 değerleride mWidth ve mHeight tarzında yapılacak.
-              padding:
-                  const EdgeInsets.only(top: 8, bottom: 3, left: 38, right: 38),
+              padding: EdgeInsets.only(
+                top: mHeight * 0.0081,
+                bottom: mHeight * 0.0032,
+                left: mWidth * 0.0884,
+                right: mWidth * 0.0884,
+              ),
               child: MainOutlinedButton(
                 text: 'Giriş yap',
                 onPressed: () {
@@ -75,7 +78,7 @@ class SplashPageTree extends StatelessWidget {
             ),
             Padding(
               //! responsive değer olarak yapılacak
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(0.0186),
               child: MainOutlinedButton(
                 text: 'Anonim olarak devam et',
                 textSize: 0.023,
