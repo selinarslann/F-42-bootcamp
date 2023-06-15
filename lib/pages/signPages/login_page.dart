@@ -24,15 +24,24 @@ class LoginPage extends StatelessWidget {
       ),
       body: Center(
         child: Padding(
+          //! responsive yapılacak
           padding: const EdgeInsets.all(20.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               TextFormField(
                 decoration: const InputDecoration(
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xffE0E0DE),
+                    ),
+                  ),
+                  filled: true,
+                  fillColor: Color.fromARGB(255, 238, 238, 238),
                   labelText: 'Kullanıcı Adı veya E-Posta',
                 ),
               ),
+              //! responsive yapılacak
               const SizedBox(height: 20.0),
               TextFormField(
                 keyboardType: TextInputType.visiblePassword,
