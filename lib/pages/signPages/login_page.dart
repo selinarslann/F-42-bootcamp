@@ -69,8 +69,10 @@ class _LoginPageState extends State<LoginPage> {
                 keyboardType: TextInputType.visiblePassword,
                 obscureText: _isSecure,
                 decoration: InputDecoration(
+                    filled: true,
                     border: const OutlineInputBorder(),
                     labelText: 'Şifre',
+                    hintText: 'Lutfen Sifrenizi Giriniz...',
                     prefixIcon: const Icon(Icons.lock_outline),
                     suffixIcon: IconButton(
                         onPressed: _changeLoading,
@@ -81,7 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                             crossFadeState: _isSecure
                                 ? CrossFadeState.showFirst
                                 : CrossFadeState.showSecond,
-                            duration: Duration(milliseconds: 300)))),
+                            duration: const Duration(milliseconds: 300)))),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -209,6 +211,8 @@ class LoginUserTextFormField extends StatelessWidget {
           filled: true,
           fillColor: const Color.fromARGB(255, 238, 238, 238),
           labelText: 'Kullanıcı Adı veya E-Posta',
+          hintText: 'Kullanici Adi veya E-Posta Adresinizi Giriniz',
+          hintStyle: const TextStyle(fontSize: 11),
           prefixIcon: const Icon(Icons.mail_outline_rounded),
           suffixIcon: emailController.text.isEmpty
               ? Container(width: 0.0, height: 0.0)
