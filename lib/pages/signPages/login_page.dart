@@ -105,7 +105,9 @@ class _LoginPageState extends State<LoginPage> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                         side: const BorderSide(
-                            color: Color(0xffEB5757), width: 0.4)),
+                          color: Color(0xffEB5757),
+                          width: 0.4,
+                        )),
                     elevation: 0,
                     shadowColor: Colors.transparent,
                     minimumSize: Size(mWidth, mHeight * 0.06),

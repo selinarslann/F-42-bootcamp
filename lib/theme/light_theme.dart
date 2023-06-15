@@ -37,7 +37,7 @@ ThemeData lightTheme = ThemeData(
       foregroundColor: Colors.white,
       disabledBackgroundColor: const Color(0xFF495464),
       disabledForegroundColor: const Color.fromARGB(255, 255, 255, 255),
-      side: BorderSide.none,
+      //side: BorderSide(),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(2),
       ),
