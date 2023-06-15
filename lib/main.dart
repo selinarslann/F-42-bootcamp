@@ -5,6 +5,8 @@ import 'package:thinktank/providers/theme.dart';
 import 'package:thinktank/theme/dark_theme.dart';
 import 'package:thinktank/theme/light_theme.dart';
 
+import 'pages/signPages/login_page.dart';
+
 void main() {
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(create: (context) => ThemeChange()),
@@ -20,7 +22,7 @@ class MainApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: context.watch<ThemeChange>().getTheme ?? lightTheme,
         darkTheme: context.watch<ThemeChange>().getTheme ?? darkTheme,
-        home: const SplashPageOne());
+        home: const LoginPage());
   }
 }
 
