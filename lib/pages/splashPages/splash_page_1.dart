@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:thinktank/pages/components/main_outlinedbutton.dart';
-import 'package:thinktank/pages/home_page.dart';
+
 import 'package:thinktank/pages/splashPages/splash_page_2.dart';
 import 'package:thinktank/pages/splashPages/splash_page_3.dart';
 
@@ -45,12 +45,13 @@ class SplashPageOne extends StatelessWidget {
             ),
             Padding(
               // ! Hemen aşağıdaki 38 ve 10 değerleride mWidth ve mHeight tarzında yapılacak.
+
               padding: const EdgeInsets.symmetric(horizontal: 38, vertical: 19),
               child: Text(
                 'ThinkThank ile başarıya giden yolda yanınızdayız. Motive edici bir ortam ile öğrenmeyi keyifli hale getirin. Siz çalışırken biz sizin yanınızdayız. Hoş geldiniz!',
                 style: GoogleFonts.inter(
                   fontWeight: FontWeight.normal,
-                  fontSize: mHeight * 0.022,
+                  fontSize: mHeight * 0.02,
                   color: const Color(0xFF37352f),
                 ),
               ),
@@ -78,7 +79,7 @@ class SplashPageOne extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                       // ! SplashPageTree OLACAK!
-                      builder: (context) => const HomePage()),
+                      builder: (context) => const SplashPageTree()),
                 );
               },
               child: Text(

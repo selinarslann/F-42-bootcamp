@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import 'package:thinktank/pages/splashPages/splash_page_1.dart';
 import 'package:thinktank/providers/theme.dart';
 import 'package:thinktank/theme/dark_theme.dart';
 import 'package:thinktank/theme/light_theme.dart';
-
-import 'pages/signPages/login_page.dart';
 
 void main() {
   runApp(MultiProvider(providers: [
