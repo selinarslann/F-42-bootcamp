@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+
+import '../providers/theme.dart';
+import '../theme/dark_theme.dart';
+import '../theme/light_theme.dart';
+import '../theme/theme_service.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -25,6 +31,23 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            Theme.of(context).brightness == Brightness.dark
+                ? IconButton(
+                    onPressed: () {
+                      context.read<ThemeChange>().changeTheme = lightTheme;
+                      ThemeService().saveTheme('lightTheme');
+                      ThemeService().getThemeFromSave();
+                    },
+                    icon: const Icon(Icons.sunny),
+                  )
+                : IconButton(
+                    onPressed: () {
+                      context.read<ThemeChange>().changeTheme = darkTheme;
+                      ThemeService().saveTheme('darkTheme');
+                      ThemeService().getThemeFromSave();
+                    },
+                    icon: const Icon(Icons.dark_mode),
+                  ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: const [
