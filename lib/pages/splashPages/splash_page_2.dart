@@ -42,21 +42,27 @@ class SplashPageTwo extends StatelessWidget {
               ),
             ),
             Padding(
-              // ! Hemen aşağıdaki 38 ve 10 değerleride mWidth ve mHeight tarzında yapılacak.
-              padding: const EdgeInsets.symmetric(horizontal: 38, vertical: 19),
+              padding: EdgeInsets.symmetric(
+                horizontal: mWidth * 0.0884,
+                vertical: mHeight * 0.0204,
+              ),
               child: Text(
                 'ThinkThank ile başarıya giden yolda yanınızdayız. Motive edici bir ortam ile öğrenmeyi keyifli hale getirin. Siz çalışırken biz sizin yanınızdayız. Hoş geldiniz!',
                 style: GoogleFonts.inter(
                   fontWeight: FontWeight.normal,
-                  fontSize: mHeight * 0.022,
+                  fontSize: mHeight * 0.0224,
                   color: const Color(0xFF37352f),
                 ),
               ),
             ),
             Padding(
               // ! Hemen aşağıdaki 38 ve 10 değerleride mWidth ve mHeight tarzında yapılacak.
-              padding:
-                  const EdgeInsets.only(top: 8, bottom: 3, left: 38, right: 38),
+              padding: EdgeInsets.only(
+                top: mHeight * 0.0091,
+                bottom: mHeight * 0.0059,
+                left: mWidth * 0.0884,
+                right: mWidth * 0.0884,
+              ),
               child: MainOutlinedButton(
                 text: 'Devam et',
                 onPressed: () {
@@ -82,7 +88,7 @@ class SplashPageTwo extends StatelessWidget {
               child: Text(
                 'geç',
                 style: GoogleFonts.inter(
-                  fontSize: mHeight * 0.018,
+                  fontSize: mHeight * 0.0193,
                   color: const Color(0xFF37352f),
                 ),
               ),

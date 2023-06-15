@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
     double mWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        leading: null,
+        automaticallyImplyLeading: false,
         title: Text(
           'Hoş geldin UserName',
           style: GoogleFonts.inter(
