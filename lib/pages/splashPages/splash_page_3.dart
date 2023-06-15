@@ -43,8 +43,10 @@ class SplashPageTree extends StatelessWidget {
               ),
             ),
             Padding(
-              // ! Hemen aşağıdaki 38 ve 10 değerleride mWidth ve mHeight tarzında yapılacak.
-              padding: const EdgeInsets.symmetric(horizontal: 38, vertical: 19),
+              padding: EdgeInsets.symmetric(
+                horizontal: mWidth * 0.0884,
+                vertical: mHeight * 0.0204,
+              ),
               child: Text(
                 'ThinkThank ile başarıya giden yolda yanınızdayız. Motive edici bir ortam ile öğrenmeyi ',
                 style: GoogleFonts.inter(
@@ -78,11 +80,12 @@ class SplashPageTree extends StatelessWidget {
                 text: 'Anonim olarak devam et',
                 textSize: 0.023,
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushAndRemoveUntil(
                     context,
                     MaterialPageRoute(
                       builder: (context) => const HomePage(),
                     ),
+                    (route) => false,
                   );
                 },
               ),
