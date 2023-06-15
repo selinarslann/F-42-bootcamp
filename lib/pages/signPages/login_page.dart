@@ -2,8 +2,39 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
+
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  final emailController = TextEditingController();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    emailController.addListener(() {
+      setState(() {});
+    });
+  }
+
+  void dispose() {
+    emailController.dispose();
+    super.dispose();
+  }
+
+  bool _isSecure = true;
+
+  void _changeLoading() {
+    setState(() {
+      _isSecure = !_isSecure;
+    });
+  }
+
+  final GlobalKey<FormState> _key = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -29,26 +60,28 @@ class LoginPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              TextFormField(
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xffE0E0DE),
-                    ),
-                  ),
-                  filled: true,
-                  fillColor: Color.fromARGB(255, 238, 238, 238),
-                  labelText: 'Kullanıcı Adı veya E-Posta',
-                ),
-              ),
+              LoginUserTextFormField(emailController: emailController),
               //! responsive yapılacak
               const SizedBox(height: 20.0),
+
+              //!
               TextFormField(
                 keyboardType: TextInputType.visiblePassword,
-                obscureText: true,
-                decoration: const InputDecoration(
-                  labelText: 'Şifre',
-                ),
+                obscureText: _isSecure,
+                decoration: InputDecoration(
+                    border: const OutlineInputBorder(),
+                    labelText: 'Şifre',
+                    prefixIcon: const Icon(Icons.lock_outline),
+                    suffixIcon: IconButton(
+                        onPressed: _changeLoading,
+                        icon: AnimatedCrossFade(
+                            firstChild:
+                                const Icon(Icons.visibility_off_outlined),
+                            secondChild: const Icon(Icons.visibility_outlined),
+                            crossFadeState: _isSecure
+                                ? CrossFadeState.showFirst
+                                : CrossFadeState.showSecond,
+                            duration: Duration(milliseconds: 300)))),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -155,5 +188,41 @@ class LoginPage extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class LoginUserTextFormField extends StatelessWidget {
+  const LoginUserTextFormField({
+    super.key,
+    required this.emailController,
+  });
+
+  final TextEditingController emailController;
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      validator: FormFieldValidator().isNotEmpty,
+      controller: emailController,
+      decoration: InputDecoration(
+          border: const OutlineInputBorder(),
+          filled: true,
+          fillColor: const Color.fromARGB(255, 238, 238, 238),
+          labelText: 'Kullanıcı Adı veya E-Posta',
+          prefixIcon: const Icon(Icons.mail_outline_rounded),
+          suffixIcon: emailController.text.isEmpty
+              ? Container(width: 0.0, height: 0.0)
+              : IconButton(
+                  onPressed: () {
+                    emailController.clear();
+                  },
+                  icon: const Icon(Icons.clear))),
+    );
+  }
+}
+
+class FormFieldValidator {
+  String? isNotEmpty(String? data) {
+    return (data?.isNotEmpty ?? false) ? null : 'Bu alan boş bırakılamaz';
   }
 }
